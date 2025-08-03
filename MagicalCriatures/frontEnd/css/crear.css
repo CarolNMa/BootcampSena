@@ -1,0 +1,74 @@
+.btn-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: url('../img/btn-Volver.png') no-repeat center/cover;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.texto{
+    font-size: 50px;
+    font-family: 'Metal Mania';
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 50px;
+}
+
+.avatar{
+    background: url(../img/avatar1.png) no-repeat center/cover;
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.nombres{
+    background: url(../img/registrar.png) no-repeat center/contain;
+    background-color: transparent;
+    width: 450px;
+    height: 140px;
+    border-radius: 10px;
+    font-family: 'Metal Mania';
+}
+
+.formulario{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 38px;
+    margin-left: 26px;
+    width: 400px;
+    height: 75px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Metal Mania';
+    letter-spacing: 2px;
+}
+
+
+.registrar {
+    background: url(../img/boton.png) no-repeat center/cover;
+    color: white;
+    font-size: 25px;
+    border: none;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: 'Metal Mania';
+    cursor: pointer;
+    margin-top: 35px;
+    transition: transform 0.2s;
+}
+
+.registrar:hover {
+    transform: scale(1.05);
+}
