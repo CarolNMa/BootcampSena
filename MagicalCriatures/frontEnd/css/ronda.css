@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Metal Mania';
+    src: url('../tipografia/MetalMania-Regular.ttf');
+}
+
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: url('../img/fondoSala.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-ronda {
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: 'Metal Mania';
+    letter-spacing: 2px;
+    color: white;
+}
+
+.poder-elegido {
+    text-align: center;
+    font-family: 'Metal Mania';
+    color: white;
+
+    position: relative;
+    right: 500px;
+}
+
+.poder-elegido img {
+    height: 100px;
+}
+
+.jugadores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.jugador {
+    text-align: center;
+    font-family: 'Metal Mania';
+}
+
+.jugador img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.jugador p {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.cartas {
+    background: url('../img/minicarta.png') no-repeat center/contain;
+    width: 90px;
+    height: 80px;
+    margin-top: -15px;
+}
+
+.mano-jugador {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.carta {
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.btn-Turno {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: url('../img/boton.png') no-repeat center/cover;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: 'Metal Mania';
+    border: none;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.carta-monstruo {
+    width: 200px;
+    height: 290px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.grupo-1 {
+background: url('../img/tierra.png') center/cover no-repeat;
+}
+
+.grupo-2 {
+background: url('../img/agua.png') center/cover no-repeat;
+}
+
+.grupo-3 {
+background: url('../img/fuego.png') center/cover no-repeat;
+}
+
+.grupo-4 {
+background: url('../img/aire.png') center/cover no-repeat;
+}
+.carta-monstruo:hover {
+    transform: translateY(-10px);
+    z-index: 2;
+}
+
+.rareza {
+    position: absolute;
+    top: 9px;
+    left: 15px;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Metal Mania';
+    letter-spacing: 2px;
+}
+
+.nombre {
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    color: #000000;
+    font-family: 'Metal Mania';
+}
+
+.imagen-monstruo{
+    background: url(../img/mn1.png) no-repeat center/cover;
+    width: 85%;
+    height: 105px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.tipo {
+    position: relative;
+    top: 133px;
+    left: 55px;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Metal Mania';
+    letter-spacing: 2px;
+}
+
+.atributos {
+    position: absolute;
+    top: 153px;
+    left: 10px;
+    color: #000000;
+    font-family: 'Metal Mania';
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+.atributos div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+
+.atributos div span:first-child {
+  text-align: left;
+}
+
+.atributos div span:last-child {
+  text-align: right;
+}

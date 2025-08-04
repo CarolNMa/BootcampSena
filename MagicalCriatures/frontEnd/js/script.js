@@ -1,17 +1,17 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const progress = document.querySelector('.loading-progress');
+document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.getElementById("loader");
+    const progress = document.getElementById("loadingProgress");
+    const mainContent = document.getElementById("mainContent");
+
     let width = 0;
+    const interval = setInterval(() => {
+        width += 2;
+        progress.style.width = width + "%";
 
-    const loading = setInterval(() => {
-        if (width >= 70) {
-            clearInterval(loading);
-
-            setTimeout(() => {
-                window.location.href = '../index.html';
-            }, 300); 
-        } else {
-            width++;
-            progress.style.width = width + '%';
+        if (width >= 100) {
+            clearInterval(interval);
+            loader.style.display = "none";
+            mainContent.style.display = "flex";
         }
-    }, 50);
+    }, 15); 
 });
