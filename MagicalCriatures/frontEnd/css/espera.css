@@ -11,7 +11,11 @@ body {
 .fondo {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 700px;
+=======
+    height: 150vh;
+>>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
     background: url('../img/fondoSala.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;

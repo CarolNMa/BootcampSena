@@ -6,7 +6,11 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 require_once 'bd.php';
 
+<<<<<<< HEAD
 // Leer el JSON
+=======
+
+>>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
 $json = file_get_contents('php://input');
 if (empty($json)) {
     http_response_code(400);
