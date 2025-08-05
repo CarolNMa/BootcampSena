@@ -14,21 +14,11 @@ if (!$idSala) {
     exit;
 }
 
-<<<<<<< HEAD
-// Preparar y ejecutar consulta
-=======
-
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
 $stmt = $conexion->prepare("SELECT nombre FROM usuario WHERE id_sala = ?");
 $stmt->bind_param("i", $idSala);
 $stmt->execute();
 $result = $stmt->get_result();
 
-<<<<<<< HEAD
-// Construir respuesta
-=======
-
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
 $jugadores = [];
 $numero = 1;
 while ($row = $result->fetch_assoc()) {
@@ -38,11 +28,6 @@ while ($row = $result->fetch_assoc()) {
     ];
 }
 
-<<<<<<< HEAD
-// Enviar respuesta
-=======
-
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
 echo json_encode([
     "status" => "success",
     "jugadores" => $jugadores

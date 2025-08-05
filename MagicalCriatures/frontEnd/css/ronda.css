@@ -11,11 +11,7 @@ body {
 .fondo {
     position: relative;
     width: 100%;
-<<<<<<< HEAD
-    height: 900px;
-=======
     height: 150vh;
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
     background: url('../img/fondoSala.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -28,10 +24,7 @@ body {
     font-family: 'Metal Mania';
     letter-spacing: 2px;
     color: white;
-<<<<<<< HEAD
-=======
     left: 20px;
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
 }
 
 .poder-elegido {
@@ -115,11 +108,7 @@ body {
     position: relative;
     cursor: pointer;
     transition: transform 0.2s;
-<<<<<<< HEAD
-    
-=======
     margin-top: 70px;
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -140,10 +129,6 @@ background: url('../img/fuego.png') center/cover no-repeat;
 .grupo-4 {
 background: url('../img/aire.png') center/cover no-repeat;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
 .carta-monstruo:hover {
     transform: translateY(-10px);
     z-index: 2;
@@ -170,18 +155,10 @@ background: url('../img/aire.png') center/cover no-repeat;
 }
 
 .imagen-monstruo{
-<<<<<<< HEAD
-    background: url(../img/mn1.png) no-repeat center/cover;
-    width: 85%;
-    height: 105px;
-    border: 1px solid #000000;
-    margin-top: 30px;
-=======
     width: 85%;
     height: 90px;
     border: 1px solid #000000;
     margin-top: 45px;
->>>>>>> 6f04e1d232a8cf868aba56d66ff66299d59da070
     margin-left: 20px;
 }
 
